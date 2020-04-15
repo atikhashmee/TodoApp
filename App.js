@@ -2,16 +2,12 @@
 import * as React from 'react';
 import {View, Text, Linking} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
   createDrawerNavigator,
   DrawerContentScrollView,
   DrawerItemList,
   DrawerItem,
 } from '@react-navigation/drawer';
-import {MaterialCommunityIcons} from 'react-native-vector-icons';
-import Ionicons from 'react-native-vector-icons/Ionicons';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import MainHomePage from './src/MainHomePage';
 
 function CustomDrawerContent(props) {
