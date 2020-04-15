@@ -11,55 +11,8 @@ import {
 } from '@react-navigation/drawer';
 import {MaterialCommunityIcons} from 'react-native-vector-icons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-const FormView = () => {
-  return (
-    <View style={{backgroundColor: 'green', flex: 1}}>
-      <Text>Hell oworld form View</Text>
-    </View>
-  );
-};
-const ListView = () => {
-  return (
-    <View style={{backgroundColor: 'red', flex: 1}}>
-      <Text>Hell oworld List View</Text>
-    </View>
-  );
-};
-
-const MainHomePage = () => {
-  const Tab = createBottomTabNavigator();
-  return (
-    <View style={{flex:1}}>
-    <View style={{height:10,backgroundColor:'blue',width:100}}></View>
-    <Tab.Navigator
-      tabBarOptions={{
-        activeTintColor: 'tomato',
-        inactiveTintColor: 'gray',
-      }}>
-      <Tab.Screen
-        name="Form"
-        component={FormView}
-        options={{
-          tabBarLabel: 'Form',
-          tabBarIcon: ({color, size}) => (
-            <Ionicons name="home-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tab.Screen
-        name="List"
-        component={ListView}
-        options={{
-          tabBarLabel: 'List',
-          tabBarIcon: ({color, size}) => (
-            <Ionicons name="alarm-outline" size={size} color={color} />
-          ),
-        }}
-      />
-    </Tab.Navigator>
-    </View>
-  );
-};
+import Icon from 'react-native-vector-icons/FontAwesome';
+import MainHomePage from './src/MainHomePage';
 
 function CustomDrawerContent(props) {
   return (
