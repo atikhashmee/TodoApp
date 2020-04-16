@@ -43,7 +43,7 @@ const MainHomePage = props => {
             options={{
               tabBarLabel: 'Form',
               tabBarIcon: ({color, size}) => (
-                <Icon name="home" size={size} color={color} />
+                <Icon name="leaf" size={size} color={color} />
               ),
             }}
           />
@@ -53,7 +53,7 @@ const MainHomePage = props => {
             options={{
               tabBarLabel: 'List',
               tabBarIcon: ({color, size}) => (
-                <Icon name="facebook" size={size} color={color} />
+                <Icon name="list" size={size} color={color} />
               ),
             }}
           />
