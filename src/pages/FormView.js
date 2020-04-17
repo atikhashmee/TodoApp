@@ -13,7 +13,7 @@ const FormView = () => {
   const [todo, setTodo] = React.useState({
     userId: 10,
     id: 1,
-    title: 'none',
+    title: '',
     completed: false,
   });
   const [saved, setSaved] = React.useState(null);
@@ -66,7 +66,7 @@ const FormView = () => {
       }}>
       <TextInput
         style={{height: 40, borderColor: 'gray', borderWidth: 1, width: '80%'}}
-        placeholder="Todo"
+        placeholder="creat new Todo"
         onChangeText={text => {
           setTodo({...todo, title: text});
         }}
